@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            methods
+        */
+
+        let phone = {
+            brand: "Sony",
+            model: "Xperia",
+            manufactureDate: 2023,
+            connect: function (contact) {
+                 console.log("Connect with:", contact);
+            },
+            getInfo: function () {
+                console.log(this.brand, this.model, this.manufactureDate);
+            }
+        }
+        phone.connect("Ola");
+        phone.getInfo();
+
+    </script> 
+</body>
+</html>
